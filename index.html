@@ -1,1 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Digital Media & Legal Drafting Agency | Rank Up With SK</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            DEFAULT: '#d4af37',
+                            light: '#e6ca65',
+                            dark: '#aa8c2c',
+                            muted: 'rgba(212, 175, 55, 0.15)'
+                        },
+                        darkBg: '#0b0b0b',
+                        cardBg: '#141414',
+                        cardBorder: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0b0b;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa8c2c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%);
+        }
+        .gold-border {
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0b0b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 antialiased selection:bg-gold selection:text-black">
 
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-cardBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Name -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 rounded-full bg-black border-2 border-gold flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-scale-balanced text-gold text-lg"></i>
+                </div>
+                <div>
+                    <span class="block font-bold text-sm tracking-wide text-white">SK DIGITAL MEDIA</span>
+                    <span class="block text-[10px] tracking-wider text-gold font-semibold">& LEGAL DRAFTING AGENCY</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#services" class="hover:text-gold transition-colors">Services</a>
+                <a href="#blueprint" class="hover:text-gold transition-colors">Viral Blueprint</a>
+                <a href="#course" class="hover:text-gold transition-colors">Free Course</a>
+                <a href="#about" class="hover:text-gold transition-colors">About Us</a>
+                <a href="#contact" class="px-5 py-2 rounded-full gold-gradient-bg text-black font-semibold hover:opacity-90 transition-opacity shadow-md">Get in Touch</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-gold focus:outline-none p-2" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-cardBorder px-6 pt-4 pb-6 space-y-4 shadow-xl">
+            <a href="#services" class="block text-gray-200 hover:text-gold font-medium py-1 mobile-link">Services</a>
+            <a href="#blueprint" class="block text-gray-200 hover:text-gold font-medium py-1 mobile-link">Viral Blueprint</a>
+            <a href="#course" class="block text-gray-200 hover:text-gold font-medium py-1 mobile-link">Free Course</a>
+            <a href="#about" class="block text-gray-200 hover:text-gold font-medium py-1 mobile-link">About Us</a>
+            <a href="#contact" class="block text-center w-full py-3 rounded-full gold-gradient-bg text-black font-bold shadow-md mt-2">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Background Glow Orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <!-- Badge -->
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-gold-muted border border-gold/30 text-gold text-xs sm:text-sm font-semibold mb-6 shadow-inner">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Where Vision Meets Strategy • Trusted Globally 🌐</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+                Legally Strong, <span class="gold-gradient-text">Digitally Smart.</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 font-light">
+                More than an agency, we are the solution. We combine legal precision with digital creativity to build trust, protect your business, and scale aggressively.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full gold-gradient-bg text-black font-bold text-base hover:opacity-95 transition-all shadow-lg gold-glow flex items-center justify-center space-x-2">
+                    <span>Start Your Project</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://instagram.com/rankupwithsk" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full bg-cardBg border border-gold/40 text-white font-medium text-base hover:border-gold transition-all flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-instagram text-gold text-lg"></i>
+                    <span>DM @rankupwithsk</span>
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto pt-10 border-t border-cardBorder">
+                <div class="p-4 rounded-xl bg-cardBg/50 border border-cardBorder">
+                    <div class="text-3xl sm:text-4xl font-extrabold gold-gradient-text">3,260+</div>
+                    <div class="text-xs sm:text-sm text-gray-400 mt-1">Community Followers</div>
+                </div>
+                <div class="p-4 rounded-xl bg-cardBg/50 border border-cardBorder">
+                    <div class="text-3xl sm:text-4xl font-extrabold gold-gradient-text">100%</div>
+                    <div class="text-xs sm:text-sm text-gray-400 mt-1">Legal & Digital Safety</div>
+                </div>
+                <div class="p-4 rounded-xl bg-cardBg/50 border border-cardBorder">
+                    <div class="text-3xl sm:text-4xl font-extrabold gold-gradient-text">#1</div>
+                    <div class="text-xs sm:text-sm text-gray-400 mt-1">Results Over Numbers</div>
+                </div>
+                <div class="p-4 rounded-xl bg-cardBg/50 border border-cardBorder">
+                    <div class="text-3xl sm:text-4xl font-extrabold gold-gradient-text">Global</div>
+                    <div class="text-xs sm:text-sm text-gray-400 mt-1">Trusted Solutions</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-[#0e0e0e] border-y border-cardBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-gold font-bold mb-3">What We Do</h2>
+                <h3 class="text-3xl sm:text-5xl font-serif font-bold text-white">Everything Your Brand Needs in One Place</h3>
+                <p class="text-gray-400 mt-4 text-base">We don't promise numbers; we build enduring results through integrated strategy.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder hover:border-gold/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gold-muted border border-gold/30 flex items-center justify-center text-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Digital Marketing</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Strategic planning, social media promotions, ad campaigns, and high-converting funnel optimization to scale your brand rapidly.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cardBorder/60 flex items-center text-gold text-xs font-semibold">
+                        <span>Scale Fast & Grow</span>
+                        <i class="fa-solid fa-arrow-right ml-auto group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder hover:border-gold/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gold-muted border border-gold/30 flex items-center justify-center text-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-users-rectangle"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Influencer Marketing</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Connecting your brand with top-tier influencers to build authentic trust, massive brand visibility, and boost real sales.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cardBorder/60 flex items-center text-gold text-xs font-semibold">
+                        <span>Boost Trust & Sales</span>
+                        <i class="fa-solid fa-arrow-right ml-auto group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder hover:border-gold/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gold-muted border border-gold/30 flex items-center justify-center text-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Legal Drafting</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Bulletproof contracts, commercial agreements, privacy policies, and comprehensive legal protection to keep your business secure.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cardBorder/60 flex items-center text-gold text-xs font-semibold">
+                        <span>Stay Protected</span>
+                        <i class="fa-solid fa-arrow-right ml-auto group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder hover:border-gold/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gold-muted border border-gold/30 flex items-center justify-center text-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Press & Articles</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Professional PR placements, media features, and authority-building press articles that establish your brand as an industry leader.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cardBorder/60 flex items-center text-gold text-xs font-semibold">
+                        <span>Build Authority</span>
+                        <i class="fa-solid fa-arrow-right ml-auto group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Viral Content Blueprint Section -->
+    <section id="blueprint" class="py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-cardBg border border-gold/30 rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-2xl">
+                <!-- Background decorative glow -->
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="inline-block px-3 py-1 rounded-full bg-gold-muted text-gold text-xs font-bold uppercase tracking-wider mb-4">
+                            Exclusive Formula
+                        </div>
+                        <h3 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">
+                            The Secret Behind <span class="gold-gradient-text">Viral Content</span>
+                        </h3>
+                        <p class="text-gray-300 text-base mb-6 leading-relaxed">
+                            Good content doesn't always go viral by accident. Behind every viral video is a proven systematic framework designed by SK Digital Media.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                <div>
+                                    <strong class="text-white">Psychology:</strong>
+                                    <span class="text-gray-400 text-sm block">Understand what people truly think and feel before creating.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                <div>
+                                    <strong class="text-white">The Hook:</strong>
+                                    <span class="text-gray-400 text-sm block">Grab immediate attention in the very first 2 seconds.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                <div>
+                                    <strong class="text-white">Timing:</strong>
+                                    <span class="text-gray-400 text-sm block">Post at the right strategic time for maximum impact.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                <div>
+                                    <strong class="text-white">Editing:</strong>
+                                    <span class="text-gray-400 text-sm block">Dynamic pacing and text overlays that keep viewers watching.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-black/60 p-6 sm:p-8 rounded-2xl border border-cardBorder">
+                        <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                            <i class="fa-solid fa-chart-line text-gold mr-3"></i>
+                            Random vs. Strategic Creator
+                        </h4>
+                        <div class="space-y-6">
+                            <div class="p-4 rounded-xl bg-red-950/20 border border-red-900/30">
+                                <span class="text-xs font-bold text-red-400 uppercase tracking-wide block mb-2">❌ Random Creator</span>
+                                <p class="text-xs text-gray-400">No clear niche, random posting schedule, low reach, and zero real business impact.</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-green-950/20 border border-green-900/30">
+                                <span class="text-xs font-bold text-green-400 uppercase tracking-wide block mb-2">✅ Strategic Creator (SK Method)</span>
+                                <p class="text-xs text-gray-300">Clear profitable niche, consistent content strategy, high engagement, and real business growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Course Banner Section -->
+    <section id="course" class="py-16 bg-[#0e0e0e] border-y border-cardBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-cardBg via-[#1a170c] to-cardBg border border-gold/40 rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-2xl">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-gold text-black font-extrabold text-xs tracking-widest uppercase mb-4 shadow">
+                    🔥 Special Free Offer
+                </div>
+                <h3 class="text-3xl sm:text-5xl font-serif font-bold text-white mb-4">
+                    Free Online <span class="gold-gradient-text">Digital Marketing & E-Commerce Course</span>
+                </h3>
+                <p class="text-gray-300 max-w-2xl mx-auto text-base sm:text-lg mb-8 font-light">
+                    Stop scrolling and start learning with our certified free online course. Learn industry standards, grow your revenue, and boost your career today!
+                </p>
+                <div class="flex flex-wrap justify-center items-center gap-6 mb-8 text-sm text-gray-300">
+                    <span class="flex items-center"><i class="fa-solid fa-circle-check text-gold mr-2"></i>100% Free Certification</span>
+                    <span class="flex items-center"><i class="fa-solid fa-circle-check text-gold mr-2"></i>Online & Flexible</span>
+                    <span class="flex items-center"><i class="fa-solid fa-circle-check text-gold mr-2"></i>Expert Guidance</span>
+                </div>
+                <a href="#contact" class="inline-block px-10 py-4 rounded-full gold-gradient-bg text-black font-bold text-base hover:opacity-95 transition-all shadow-lg gold-glow">
+                    Enroll Free Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Strategic Pillars -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-gold font-bold mb-3">Our Core Philosophy</h2>
+                <h3 class="text-3xl sm:text-4xl font-serif font-bold text-white">Protect Today, Prosper Tomorrow.</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder text-center">
+                    <div class="w-16 h-16 rounded-full bg-gold-muted border border-gold/30 flex items-center justify-center text-gold text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-shield-dog"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Strong Legal Foundation</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">From legal drafting to brand protection, we ensure your intellectual property and business agreements are airtight.</p>
+                </div>
+
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder text-center">
+                    <div class="w-16 h-16 rounded-full bg-gold-muted border border-gold/30 flex items-center justify-center text-gold text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Sustainable Growth</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Build brand equity, create viral momentum, and scale your revenues with proven, data-driven marketing strategies.</p>
+                </div>
+
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder text-center">
+                    <div class="w-16 h-16 rounded-full bg-gold-muted border border-gold/30 flex items-center justify-center text-gold text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Expert Guidance</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Direct mentorship and agency support from SK Digital Media. We make complex business growth simple.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / DM Section -->
+    <section id="contact" class="py-20 bg-[#0e0e0e] border-t border-cardBorder relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-xs uppercase tracking-widest text-gold font-bold mb-3">Let's Connect</h2>
+            <h3 class="text-3xl sm:text-5xl font-serif font-bold text-white mb-6">Ready to Rank Up Your Brand?</h3>
+            <p class="text-gray-400 max-w-xl mx-auto mb-10">
+                Whether you need expert legal drafting, high-impact marketing, or consultation, reach out to us directly.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+                <a href="https://instagram.com/rankupwithsk" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full gold-gradient-bg text-black font-bold text-base hover:opacity-95 transition-all shadow-lg flex items-center justify-center space-x-3">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                    <span>DM on Instagram (@rankupwithsk)</span>
+                </a>
+                <a href="https://paypal.me/Rankupwithsk" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full bg-cardBg border border-gold text-gold font-bold text-base hover:bg-gold hover:text-black transition-all flex items-center justify-center space-x-3">
+                    <i class="fa-brands fa-paypal text-xl"></i>
+                    <span>PayPal Support (paypal.me/Rankupwithsk)</span>
+                </a>
+            </div>
+
+            <!-- Interactive Inquiry Form -->
+            <div class="bg-cardBg p-8 sm:p-10 rounded-3xl border border-cardBorder text-left max-w-2xl mx-auto shadow-2xl">
+                <h4 class="text-xl font-bold text-white mb-6 text-center">Send Us a Quick Inquiry</h4>
+                <form id="inquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Your Name</label>
+                        <input type="text" id="name" required class="w-full bg-black border border-cardBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors text-sm" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Email or Phone</label>
+                        <input type="text" id="contact-info" required class="w-full bg-black border border-cardBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors text-sm" placeholder="Enter your email or phone number">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Select Service</label>
+                        <select id="service-type" class="w-full bg-black border border-cardBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors text-sm">
+                            <option value="Digital Marketing">Digital Marketing & Social Media</option>
+                            <option value="Legal Drafting">Legal Drafting & Contracts</option>
+                            <option value="Influencer Marketing">Influencer Marketing</option>
+                            <option value="Press & Articles">Press & Articles</option>
+                            <option value="Free Course">Free Digital Marketing Course</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Your Message</label>
+                        <textarea id="message" rows="4" required class="w-full bg-black border border-cardBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors text-sm" placeholder="Tell us about your brand and requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl gold-gradient-bg text-black font-bold text-sm tracking-wider uppercase hover:opacity-90 transition-opacity shadow-md">
+                        Submit Inquiry
+                    </button>
+                </form>
+                <div id="success-message" class="hidden mt-4 p-4 rounded-xl bg-green-950/40 border border-green-800 text-green-300 text-center text-sm">
+                    Thank you! Your inquiry has been received. We will connect with you shortly.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-cardBorder text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-full bg-black border border-gold flex items-center justify-center">
+                    <i class="fa-solid fa-scale-balanced text-gold text-xs"></i>
+                </div>
+                <div>
+                    <span class="block font-bold text-white text-xs">SK DIGITAL MEDIA & LEGAL DRAFTING AGENCY</span>
+                    <span class="block text-[10px] text-gold">More than Agency, We Are The Solution</span>
+                </div>
+            </div>
+
+            <div class="flex space-x-6 text-lg">
+                <a href="https://instagram.com/rankupwithsk" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://paypal.me/Rankupwithsk" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors"><i class="fa-brands fa-paypal"></i></a>
+            </div>
+
+            <p class="text-xs text-gray-500">
+                © 2026 SK Digital Media (@rankupwithsk). All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Form Submission -->
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission handler (no alert() used)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const successBox = document.getElementById('success-message');
+            const form = document.getElementById('inquiry-form');
+
+            form.reset();
+            successBox.classList.remove('hidden');
+            successBox.textContent = `Thank you, ${name}! Your inquiry has been successfully sent. We will get back to you soon.`;
+
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
